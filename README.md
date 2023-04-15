@@ -1,5 +1,10 @@
 # kitra
 
+## Requirements
+
+* Node
+* npm
+
 ## Setup
 Clone the repo and install the dependencies.
 
@@ -10,13 +15,22 @@ git clone git@github.com:eemsquared/kitra.git
 npm install
 ```
 
+To seed the database run the following command:
+```bash
+npm run seed
+```
+_You need to run the command above to populate the database with the initial data._
+
 To start the express server, run the following
 
 ```bash
 node index.js
 ```
 
-Open [http://localhost:3306](http://localhost:3306)
+Open [http://localhost:3306](http://localhost:3306) and you should see this output:
+```json
+{"message":"OK!"}
+```
 
 ## Endpoints
 
