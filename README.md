@@ -21,8 +21,18 @@ npm run seed
 ```
 _You need to run the command above to populate the database with the initial data._
 
-To start the express server, run the following
+### To start the express application, run the following:
 
+Using nodemon
+```bash
+npm run dev
+```
+
+Usine node
+```bash
+npm run start
+```
+or 
 ```bash
 node index.js
 ```
