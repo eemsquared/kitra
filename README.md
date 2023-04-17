@@ -42,6 +42,25 @@ Open [http://localhost:3306](http://localhost:3306) and you should see this outp
 {"message":"OK!"}
 ```
 
+### Using Docker
+You can also run this application using Docker. You should have Docker installed in your machine.
+```bash
+git clone git@github.com:eemsquared/kitra.git
+```
+Build the docker image
+```bash
+docker build . -t kitra
+```
+Run the Docker container locally
+```bash
+docker run -p 49160:8080 -d kitra
+```
+To seed the database run the following command:
+```bash
+npm run seed
+```
+
+
 ## Endpoints
 
 `GET /treasures`
